@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
-@import "~bootstrap/scss/bootstrap";
 
 body {
     padding-top : 140px;
@@ -12,6 +11,7 @@ h1 {
 }
 
 $theme-colors: (
-        "primary": #d33e3e,
-        "secondary": #e7e7e7ff,
+        "primary": #b13838ff,
+        "secondary": #e7e7e7ff
 );
+@import "~bootstrap/scss/bootstrap";
