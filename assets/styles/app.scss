@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
 body {
-    background-color: blue;
     padding-top : 140px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@import "~bootstrap/scss/bootstrap";
+h1 {
+    font-family: 'Syncopate', sans-serif;
+}
