@@ -7,14 +7,18 @@
             <h1 class="mt-0">{{ program.title }}</h1>
             <p>{{ program.summary }}</p>
             <p>Catégorie : {{ program.category.name }}</p>
-            <p>Saisons disponibles :</p>
-            <ul>
-                {% for season in seasons %}
-                <li><a href="/programs/{{ program.id}}/seasons/{{ season.number }}">{{ season.number }} : {{ season.description }}</a></li>
-                {% else %}
-                    Aucune saison trouvée.
-                {% endfor %}
-            </ul>
+            <h2>Saison {{ season.number}} de {{ program.title}} : </h2>
+            <div>
+                <p>Année : {{ season.year }}</p>
+                <p>Description : {{ season.description }}</p>
+                <ul>Liste des épisodes:
+                    {% for episode in episodes %}
+                        <li>Episode {{ episode.number }} - {{ episode.title }}</li>
+                    {% else %}
+                        Aucun épisode trouvé.
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 

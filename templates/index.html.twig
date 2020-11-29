@@ -3,5 +3,16 @@
 {% block body %}
     <body>
     <h1 class="text-primary">{{ message }}</h1>
+
+    <p>
+        <a href="{{ path('program_index') }}">
+            Liste des programmes
+        </a>
+    </p>
+    <p>
+    <a href="{{ path('category_index') }}">
+        Liste des catégories
+    </a>
+    </p>
     </body>
 {% endblock %}
