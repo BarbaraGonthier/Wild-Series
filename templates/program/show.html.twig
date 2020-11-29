@@ -9,7 +9,7 @@
             <p>Catégorie : {{ program.category.name }}</p>
             <p>Saisons disponibles :</p>
             <ul>
-                {% for season in seasons %}
+                {% for season in program.seasons %}
                 <li><a href="/programs/{{ program.id}}/seasons/{{ season.number }}">{{ season.number }} : {{ season.description }}</a></li>
                 {% else %}
                     Aucune saison trouvée.

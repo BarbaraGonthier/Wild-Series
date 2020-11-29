@@ -12,7 +12,7 @@
                 <p>Année : {{ season.year }}</p>
                 <p>Description : {{ season.description }}</p>
                 <ul>Liste des épisodes:
-                    {% for episode in episodes %}
+                    {% for episode in season.episodes %}
                         <li>Episode {{ episode.number }} - {{ episode.title }}</li>
                     {% else %}
                         Aucun épisode trouvé.
