@@ -2,12 +2,12 @@
 {% block title %}Wild Series{% endblock %}
 {% block body %}
     <div class="media">
-        <img class="align-self-start mr-3" src="{{program.poster}}" alt="{{ program.title }} poster">
+        <img class="align-self-start mr-3" src="{{season.program.poster}}" alt="{{ season.program.title }} poster">
         <div class="media-body">
-            <h1 class="mt-0">{{ program.title }}</h1>
-            <p>{{ program.summary }}</p>
-            <p>Catégorie : {{ program.category.name }}</p>
-            <h2>Saison {{ season.number}} de {{ program.title}} : </h2>
+            <h1 class="mt-0">{{ season.program.title }}</h1>
+            <p>{{ season.program.summary }}</p>
+            <p>Catégorie : {{ season.program.category.name }}</p>
+            <h2>Saison {{ season.number}} de {{ season.program.title}} : </h2>
             <div>
                 <p>Année : {{ season.year }}</p>
                 <p>Description : {{ season.description }}</p>

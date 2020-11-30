@@ -62,19 +62,10 @@ class ProgramController extends AbstractController
      */
     public function showBySeason(int $programId, int $seasonNumber): Response
     {
-        $program = $this->getDoctrine()
-            ->getRepository(Program::class)
-            ->findOneBy(['id' =>$programId]);
-
         $season = $this->getDoctrine()
             ->getRepository(Season::class)
-            ->findBy(['program' => $programId,'number' => $seasonNumber]);
+            ->findBy(['program' => $programId, 'number' => $seasonNumber]);
 
-        if (!$program) {
-            throw $this->createNotFoundException(
-                'No program with id : '.$programId.' found in program\'s table.'
-            );
-        }
         if (!$season) {
             throw $this->createNotFoundException(
                 'No season with number : '.$seasonNumber.' found in season\'s table.'
@@ -82,7 +73,6 @@ class ProgramController extends AbstractController
         }
 
         return $this->render('program/season_show.html.twig', [
-            'program' => $program,
             'season' => $season[0],
         ]);
     }
