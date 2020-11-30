@@ -6,6 +6,7 @@ namespace App\Controller;
 use App\Entity\Episode;
 use App\Entity\Program;
 use App\Entity\Season;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -37,17 +38,8 @@ class ProgramController extends AbstractController
      * @param int $id
      * @return Response
      */
-    public function show(int $id): Response
+    public function show(Program $program): Response
     {
-        $program = $this->getDoctrine()
-            ->getRepository(Program::class)
-            ->findOneBy(['id' =>$id]);
-
-        if (!$program) {
-            throw $this->createNotFoundException(
-                'No program with id : '.$id.' found in program\'s table.'
-            );
-        }
         return $this->render('program/show.html.twig', [
             'program' => $program,
 
@@ -55,25 +47,32 @@ class ProgramController extends AbstractController
     }
     /**
      * Correspond à la route /programs/ et au name "program_season_show"
-     * @Route("/{programId}/seasons/{seasonNumber}", methods={"GET"}, name="showBySeason")
-     * @param int $programId
-     * @param int $seasonNumber
+     * @Route("/{programId}/seasons/{seasonId}", methods={"GET"}, name="showBySeason")
+     * @ParamConverter("program", class="App\Entity\Program", options={"mapping": {"programId": "id"}})
+     * @ParamConverter("season", class="App\Entity\Season", options={"mapping": {"seasonId": "id"}})
      * @return Response
      */
-    public function showBySeason(int $programId, int $seasonNumber): Response
+    public function showBySeason(Program $program, Season $season): Response
     {
-        $season = $this->getDoctrine()
-            ->getRepository(Season::class)
-            ->findBy(['program' => $programId, 'number' => $seasonNumber]);
-
-        if (!$season) {
-            throw $this->createNotFoundException(
-                'No season with number : '.$seasonNumber.' found in season\'s table.'
-            );
-        }
-
         return $this->render('program/season_show.html.twig', [
-            'season' => $season[0],
+            'program' => $program,
+            'season' => $season,
+        ]);
+    }
+    /**
+     * Correspond à la route /programs/ et au name "program_episode_show"
+     * @Route("/{programId}/seasons/{seasonId}/episodes/{episodeId}", methods={"GET"}, name="showEpisode")
+     * @ParamConverter("program", class="App\Entity\Program", options={"mapping": {"programId": "id"}})
+     * @ParamConverter("season", class="App\Entity\Season", options={"mapping": {"seasonId": "id"}})
+     * @ParamConverter("episode", class="App\Entity\Episode", options={"mapping": {"episodeId": "id"}})
+     * @return Response
+     */
+    public function showEpisode(Program $program, Season $season, Episode $episode): Response
+    {
+        return $this->render('program/episode_show.html.twig', [
+            'program' => $program,
+            'season' => $season,
+            'episode' => $episode,
         ]);
     }
 }
