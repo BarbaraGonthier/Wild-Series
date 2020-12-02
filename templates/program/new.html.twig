@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <input type='submit' value='Add category'>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
