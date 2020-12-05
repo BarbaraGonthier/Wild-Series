@@ -6,9 +6,15 @@ use App\Repository\ProgramRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ProgramRepository::class)
+ * @UniqueEntity(
+ *     "title",
+ *     message="ce titre existe déjà"
+ * )
  */
 class Program
 {
@@ -21,11 +27,22 @@ class Program
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="ne me laisse pas tout vide")
+     * @Assert\Length(
+     *     max="255",
+     *     maxMessage="Le titre {{ value }} est trop long, il ne devrait pas dépasser {{ limit }} caractères"
+     * )
      */
     private $title;
 
     /**
      * @ORM\Column(type="text")
+     * @Assert\NotBlank(message="ne me laisse pas tout vide")
+     * @Assert\Regex(
+     *     pattern="/plus\sbelle\sla\svie/i",
+     *     match=false,
+     *     message="On parle de vraies séries ici"
+     * )
      */
     private $summary;
 
