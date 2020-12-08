@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bede7e2c-b5da-4882-b3c4-deb13816bf76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Actor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ProgramType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProgramType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/category/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/new.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +132,8 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kN7yqGFsLbukjIzo0i4zQz7gr4" />
@@ -135,6 +147,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -168,7 +181,9 @@
       <workItem from="1606889626202" duration="4514000" />
       <workItem from="1606975674316" duration="1707000" />
       <workItem from="1607095613306" duration="17000" />
-      <workItem from="1607095735149" duration="11684000" />
+      <workItem from="1607095735149" duration="11994000" />
+      <workItem from="1607329462589" duration="4462000" />
+      <workItem from="1607349670990" duration="11013000" />
     </task>
     <servers />
   </component>
@@ -184,10 +199,18 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607263880849" />
-    <state x="970" y="483" width="673" height="575" key="NewPhpClassDialog" timestamp="1607263808291">
+    <state x="715" y="391" width="721" height="452" key="EditFileWatcherDialog" timestamp="1607347764913">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="970" y="483" width="673" height="575" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607263808291" />
+    <state x="715" y="391" width="721" height="452" key="EditFileWatcherDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607347764913" />
+    <state x="970" y="483" width="689" height="575" key="NewPhpClassDialog" timestamp="1607409704554">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="970" y="483" width="689" height="575" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607409704554" />
+    <state x="898" y="270" width="1022" height="737" key="SettingsEditor" timestamp="1607347760365">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="898" y="270" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1607347760365" />
     <state x="561" y="207" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606294875104">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
