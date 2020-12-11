@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bede7e2c-b5da-4882-b3c4-deb13816bf76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/EpisodeFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/SeasonFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Slugify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +179,10 @@
       <workItem from="1607095735149" duration="11994000" />
       <workItem from="1607329462589" duration="4462000" />
       <workItem from="1607349670990" duration="11013000" />
-      <workItem from="1607442721657" duration="2525000" />
+      <workItem from="1607442721657" duration="7437000" />
+      <workItem from="1607521209572" duration="2749000" />
+      <workItem from="1607590651715" duration="4603000" />
+      <workItem from="1607619324511" duration="87000" />
     </task>
     <servers />
   </component>
@@ -194,18 +194,18 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="551" y="251" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1606294888550" />
-    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607443421812">
+    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607609680991">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607443421812" />
+    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607609680991" />
     <state x="715" y="391" width="721" height="452" key="EditFileWatcherDialog" timestamp="1607347764913">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="715" y="391" width="721" height="452" key="EditFileWatcherDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607347764913" />
-    <state x="970" y="483" width="689" height="575" key="NewPhpClassDialog" timestamp="1607443892189">
+    <state x="970" y="483" width="689" height="575" key="NewPhpClassDialog" timestamp="1607607465851">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="970" y="483" width="689" height="575" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607443892189" />
+    <state x="970" y="483" width="689" height="575" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607607465851" />
     <state x="898" y="270" width="1022" height="737" key="SettingsEditor" timestamp="1607347760365">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
