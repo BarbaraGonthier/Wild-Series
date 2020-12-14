@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b62b4aa4f075d00051be3a5e8c417f26",
+    "content-hash": "47a2c59418acb974a1f495383c079e74",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -4263,16 +4263,16 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v5.1.8",
+            "version": "v5.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "fa5cc9f894a5d082e7e46bfdd44f5dd83529f0ba"
+                "reference": "a8be34b60e81c54f764f5ecee2a143b1dfbc60dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/fa5cc9f894a5d082e7e46bfdd44f5dd83529f0ba",
-                "reference": "fa5cc9f894a5d082e7e46bfdd44f5dd83529f0ba",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/a8be34b60e81c54f764f5ecee2a143b1dfbc60dc",
+                "reference": "a8be34b60e81c54f764f5ecee2a143b1dfbc60dc",
                 "shasum": ""
             },
             "require": {
@@ -4323,7 +4323,7 @@
             "description": "Symfony Mailer Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v5.1.8"
+                "source": "https://github.com/symfony/mailer/tree/v5.1.9"
             },
             "funding": [
                 {
@@ -4339,7 +4339,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:01:57+00:00"
+            "time": "2020-10-28T21:31:18+00:00"
         },
         {
             "name": "symfony/mime",
@@ -8277,7 +8277,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
