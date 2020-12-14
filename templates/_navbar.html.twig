@@ -38,12 +38,20 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Déconnexion</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">John Doe</a></li>
+                    <li class="nav-item">
+                        {% if app.user %}
+                            <a class="nav-link text-dark mr-4" href="{{ path('app_logout') }}"> Se déconnecter</a>
+                        {% else %}
+                            <a class="nav-link text-dark mr-2" href="{{ path('app_login') }}"> Se connecter</a>
+                        {% endif %}
+                    </li>
                 </ul>
-                    <a class="navbar-brand img d-none d-lg-block" href="#">
-                        <img width="70" height="70" class="d-inline-block" src="{{ asset('/build/navbar/noun_Male_2997449.png') }}" alt="ID">
-                    </a>
+                    {% if app.user %}
+                        {{ app.user.email }}
+                        <a class="navbar-brand img d-none d-lg-block ml-2" href="#">
+                            <img width="70" height="70" class="d-inline-block" src="{{ asset('/build/navbar/noun_Male_2997449.png') }}" alt="ID">
+                        </a>
+                    {% endif %}
             </div>
         </nav>
     </div>

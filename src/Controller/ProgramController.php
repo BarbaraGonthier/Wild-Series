@@ -3,9 +3,11 @@
 // src/Controller/ProgramController.php
 namespace App\Controller;
 
+use App\Entity\Comment;
 use App\Entity\Episode;
 use App\Entity\Program;
 use App\Entity\Season;
+use App\Form\CommentType;
 use App\Form\ProgramType;
 use App\Service\Slugify;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
@@ -80,9 +82,9 @@ class ProgramController extends AbstractController
      */
     public function show(Program $program): Response
     {
+
         return $this->render('program/show.html.twig', [
             'program' => $program,
-
         ]);
     }
     /**
@@ -101,18 +103,31 @@ class ProgramController extends AbstractController
     }
     /**
      * Correspond à la route /programs/ et au name "program_episode_show"
-     * @Route("/{programId}/seasons/{seasonId}/episodes/{episodeId}", methods={"GET"}, name="showEpisode")
+     * @Route("/{programId}/seasons/{seasonId}/episodes/{episodeId}", methods={"GET","POST"}, name="showEpisode")
      * @ParamConverter("program", class="App\Entity\Program", options={"mapping": {"programId": "id"}})
      * @ParamConverter("season", class="App\Entity\Season", options={"mapping": {"seasonId": "id"}})
      * @ParamConverter("episode", class="App\Entity\Episode", options={"mapping": {"episodeId": "id"}})
      * @return Response
      */
-    public function showEpisode(Program $program, Season $season, Episode $episode): Response
+    public function showEpisode(Program $program, Season $season, Episode $episode, Request $request): Response
     {
+        $comment = new Comment();
+        $form = $this->createForm(CommentType::class, $comment);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $comment->setEpisode($episode);
+            $comment->setAuthor($this->getUser());
+            $entityManager->persist($comment);
+            $entityManager->flush();
+            return $this->redirectToRoute('program_index');
+        }
         return $this->render('program/episode_show.html.twig', [
             'program' => $program,
             'season' => $season,
             'episode' => $episode,
+            'form' => $form->createView(),
         ]);
     }
 }
