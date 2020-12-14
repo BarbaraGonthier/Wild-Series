@@ -2,7 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Comment;
 use App\Entity\Episode;
+use App\Entity\User;
+use App\Form\CommentType;
 use App\Form\EpisodeType;
 use App\Service\Slugify;
 use App\Repository\EpisodeRepository;
@@ -44,15 +47,10 @@ class EpisodeController extends AbstractController
             $entityManager->persist($episode);
             $entityManager->flush();
             $email = (new Email())
-
                 ->from($this->getParameter('mailer_from'))
-
                 ->to($this->getParameter('mailer_to'))
-
                 ->subject('Un nouvel épisode vient d\'être publié !')
-
                 ->html($this->renderView('episode/newEpisodeEmail.html.twig', ['episode' => $episode]));
-
 
             $mailer->send($email);
 

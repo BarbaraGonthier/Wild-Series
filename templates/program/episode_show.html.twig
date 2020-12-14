@@ -8,6 +8,20 @@
             <h2>Saison {{ season.number }}</h2>
             <p>Episode {{ episode.number }} - {{ episode.title }}</p>
             <p>Résumé : {{ episode.synopsis }}</p>
+            <h3> Commentaires : </h3>
+            <ul>
+                {% for comment in episode.comments %}
+                <li>De : {{ comment.author.email }} <br>
+                    Note : {{ comment.rate }} <br>
+                    Commentaire : {{ comment.comment }}
+                </li>
+                {% endfor %}
+            </ul>
+            {% if app.user %}
+                <h3>Ajouter un commentaire</h3>
+                {{ include('episode/_form.html.twig') }}
+            {% endif %}
+
         </div>
     </div>
 
