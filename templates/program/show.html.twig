@@ -23,9 +23,12 @@
                     <li>Aucun acteur pour cette série</li>
                 {% endfor %}
             </ul>
+            <a href="{{ path('program_edit', {slug: program.slug}) }}">edit</a>
         </div>
     </div>
-
+    {% if is_granted("ROLE_ADMIN") %}
+        <a href="{{ path('program_edit', { 'slug': program.slug} ) }}">Éditer</a>
+    {%endif%}
     <a href="{{ path('program_index') }}">
         Retour à la liste des programmes
     </a>

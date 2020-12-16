@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bede7e2c-b5da-4882-b3c4-deb13816bf76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d2ebe62-9cd3-4e86-95b1-7f3c80eac898.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8d2ebe62-9cd3-4e86-95b1-7f3c80eac898.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/program/_deleteComment_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/program/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/program/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EpisodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EpisodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Episode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Episode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/episode/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/episode/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/program/episode_show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/episode_show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +191,15 @@
       <workItem from="1607590651715" duration="4603000" />
       <workItem from="1607619324511" duration="87000" />
       <workItem from="1607666810729" duration="4175000" />
-      <workItem from="1607935832073" duration="5888000" />
+      <workItem from="1607935832073" duration="8133000" />
+      <workItem from="1608013923204" duration="713000" />
+      <workItem from="1608014659478" duration="348000" />
+      <workItem from="1608015382020" duration="2981000" />
+      <workItem from="1608025744793" duration="2627000" />
+      <workItem from="1608038168907" duration="2845000" />
+      <workItem from="1608042389511" duration="14000" />
+      <workItem from="1608046161436" duration="13000" />
+      <workItem from="1608100026039" duration="3020000" />
     </task>
     <servers />
   </component>
@@ -200,10 +211,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="551" y="251" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1606294888550" />
-    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607940746196">
+    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608014211935">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607940746196" />
+    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1608014211935" />
     <state x="715" y="391" width="721" height="452" key="EditFileWatcherDialog" timestamp="1607347764913">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
