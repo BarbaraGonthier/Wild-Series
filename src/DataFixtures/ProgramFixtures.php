@@ -3,10 +3,12 @@
 namespace App\DataFixtures;
 
 use App\Entity\Program;
+use App\Entity\User;
 use App\Service\Slugify;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class ProgramFixtures extends Fixture implements DependentFixtureInterface
 {
@@ -53,6 +55,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
             $program->setSlug($this->slugify->generate($title));
             $program->setSummary($data['summary']);
             $program->setCategory($this->getReference('category_'.rand(0,5)));
+            $program->setOwner($this->getReference('user_'.rand(0,1)));
             $manager->persist($program);
             $this->addReference('program_' . $i, $program);
             $i++;

@@ -11,11 +11,17 @@
             <h3> Commentaires : </h3>
             <ul>
                 {% for comment in episode.comments %}
-                <li>De : {{ comment.author.email }} <br>
+                <li class="mt-4">De : {{ comment.author.email }} <br>
                     Note : {{ comment.rate }} <br>
                     Commentaire : {{ comment.comment }}
                 </li>
+                    {% if app.user %}
+                    {% if is_granted("ROLE_ADMIN") or app.user.email == comment.author.email %}
+                        {{ include('program/_deleteComment_form.html.twig') }}
+                    {% endif %}
+                    {% endif %}
                 {% endfor %}
+
             </ul>
             {% if app.user %}
                 <h3>Ajouter un commentaire</h3>
