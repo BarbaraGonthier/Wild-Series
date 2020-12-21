@@ -25,3 +25,5 @@ Link "how to use" video challenge 19 : https://www.loom.com/share/d6c55230541743
 Link "how to use" video challenge 20 : https://www.loom.com/share/b08c380d586d4c4b8db2c46d9317c554
 
 Link "how to use" video challenge 21 : https://www.loom.com/share/d9f3511f2eca4051bb4d02c6d92c2ab0
+
+Link "how to use" video challenge 22 : ttps://www.loom.com/share/f13afcc7e58142f6a45a99368b567ea2
