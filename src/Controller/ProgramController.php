@@ -41,6 +41,7 @@ class ProgramController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
+            $this->addFlash('success', 'The program has been edited');
 
             return $this->redirectToRoute('program_index');
         }
@@ -67,17 +68,13 @@ class ProgramController extends AbstractController
             $program->setOwner($this->getUser());
             $entityManager->persist($program);
             $entityManager->flush();
+            $this->addFlash('success', 'The new program has been created');
 
             $email = (new Email())
-
                 ->from($this->getParameter('mailer_from'))
-
                 ->to($this->getParameter('mailer_to'))
-
                 ->subject('Une nouvelle série vient d\'être publiée !')
-
                 ->html($this->renderView('program/newProgramEmail.html.twig', ['program' => $program]));
-
 
             $mailer->send($email);
             return $this->redirectToRoute('program_index');
