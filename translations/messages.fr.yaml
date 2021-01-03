@@ -1,6 +1,7 @@
 welcome: Bienvenue
 account:
   sign_in: Se connecter
+  log_out: Se déconnecter
   register: Créer un compte
 programs:
   programs: Programmes

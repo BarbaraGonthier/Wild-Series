@@ -1,6 +1,7 @@
 welcome: Welcome
 account:
   sign_in: Sign In
+  log_out: Log out
   register: Create Account
 programs:
   programs: Programs
