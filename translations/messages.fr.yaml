@@ -1,0 +1,19 @@
+welcome: Bienvenue
+account:
+  sign_in: Se connecter
+  register: Créer un compte
+programs:
+  programs: Programmes
+  list: Liste des programmes
+categories:
+  categories: Catégories
+  list: Liste des catégories
+actors:
+  actors: Acteurs
+favorites:
+  my_favorites: Mes favoris
+security:
+  please_log_in: Veuillez vous identifier
+  email: Adresse Email
+  password: Mot de passe
+  confirm: Valider

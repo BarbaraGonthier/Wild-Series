@@ -2,16 +2,16 @@
 {% block title %}Wild Series{% endblock %}
 {% block body %}
     <body>
-    <h1 class="text-primary">{{ message }}</h1>
+    <h1 class="text-primary">{{'welcome'|trans}}!</h1>
 
     <p>
         <a href="{{ path('program_index') }}">
-            Liste des programmes
+            {{'programs.list'|trans}}
         </a>
     </p>
     <p>
     <a href="{{ path('category_index') }}">
-        Liste des catégories
+        {{'categories.list'|trans}}
     </a>
     </p>
     </body>

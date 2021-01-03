@@ -1,0 +1,19 @@
+welcome: Welcome
+account:
+  sign_in: Sign In
+  register: Create Account
+programs:
+  programs: Programs
+  list: Programs list
+categories:
+  categories: Categories
+  list : Categories list
+actors:
+  actors: Actors
+favorites:
+  my_favorites: My favorites
+security:
+  please_log_in: Please log in
+  email: Email
+  password: Password
+  confirm: Submit
