@@ -1,6 +1,4 @@
-<div class="fixed-top">
-    <div class>
-        <nav class="navbar navbar-expand-md navbar-light bg-light spacenav">
+ <nav class="navbar navbar-expand-md navbar-light bg-light spacenav fixed-top">
             <button class="navbar-toggler ml-auto " type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -18,9 +16,7 @@
                             {{ 'categories.categories'|trans }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Cat1</a>
-                            <a class="dropdown-item" href="#">Cat2</a>
-                            <a class="dropdown-item" href="#">Cat3</a>
+                                {{ render(controller('App\\Controller\\DefaultController::navbarTop')) }}
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-5">
@@ -67,5 +63,4 @@
                     {% endif %}
             </div>
         </nav>
-    </div>
-</div>
+
