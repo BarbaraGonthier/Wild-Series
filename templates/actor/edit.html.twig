@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Actor{% endblock %}
+
+{% block body %}
+    <h1 class="text-center my-4">Edit Actor</h1>
+    <div class="container">
+        <div class="col my-5">
+            {{ form_start(form) }}
+            {{ form_errors(form) }}
+            {{ form_widget(form) }}
+            <div class="col button text-center">
+                <button type="submit" class="btn">{{ button_label|default('Editer') }}</button>
+            </div>
+            {{ form_end(form) }}
+        </div>
+
+        <div class="back my-4">
+            <a href="{{ path('program_index') }}">Retour aux prgrammes</a>
+        </div>
+    </div>
+{% endblock %}

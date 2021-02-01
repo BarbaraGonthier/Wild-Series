@@ -2,13 +2,18 @@
 {% block title %}Wild Series{% endblock %}
 {% block body %}
     <h1> {{ actor.name }} </h1>
+    <div>
+        <img class="align-self-start mr-3 w-25" src="{{ asset('uploads/' ~ actor.poster) }}" alt="{{ actor.name }} poster">
+    </div>
     <ul>Liste des films dans lesquels cet acteur a joué:
         {% for program in actor.programs %}
-            <li><a href="{{ path("program_show", { id: program.id }) }}">{{ program.title }}</a></li>
+            <li><a href="{{ path("program_show", { slug: program.slug }) }}">{{ program.title }}</a></li>
         {% else %}
             Aucun épisode trouvé.
         {% endfor %}
     </ul>
+
+    <a href="{{ path("actor_edit", { id: actor.id }) }}">Éditer</a>
 
     <a href="{{ path('program_index') }}">
         Retour à la liste des programmes

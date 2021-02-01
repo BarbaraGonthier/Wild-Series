@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bede7e2c-b5da-4882-b3c4-deb13816bf76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/navbartop.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ActorType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/actor/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ActorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ActorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Actor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProgramType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProgramType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/actor/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/actor/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +141,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/symfonycasts/verify-email-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kN7yqGFsLbukjIzo0i4zQz7gr4" />
@@ -206,7 +221,17 @@
       <workItem from="1609335215528" duration="375000" />
       <workItem from="1609336106911" duration="654000" />
       <workItem from="1609422266748" duration="691000" />
-      <workItem from="1609659496496" duration="9568000" />
+      <workItem from="1609659496496" duration="11369000" />
+      <workItem from="1609765012706" duration="508000" />
+      <workItem from="1609765599042" duration="122000" />
+      <workItem from="1609836369192" duration="599000" />
+      <workItem from="1610093364649" duration="2562000" />
+      <workItem from="1610098381252" duration="1208000" />
+      <workItem from="1610537043519" duration="366000" />
+      <workItem from="1610554495780" duration="1870000" />
+      <workItem from="1611667734730" duration="660000" />
+      <workItem from="1612176028453" duration="1691000" />
+      <workItem from="1612189462941" duration="1913000" />
     </task>
     <servers />
   </component>
@@ -222,10 +247,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="72" y="677" width="613" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1609674280051" />
-    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608209997651">
+    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612192173369">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1608209997651" />
+    <state x="886" y="430" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1612192173369" />
     <state x="715" y="391" width="721" height="452" key="EditFileWatcherDialog" timestamp="1607347764913">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
